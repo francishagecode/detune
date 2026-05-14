@@ -3071,6 +3071,7 @@ fn draw_eye(frame: &mut Frame, app: &mut App, area: Rect) {
                 Style::default().fg(rgb(color)),
             ));
         }
+        lines.push(Line::from(spans));
     }
     frame.render_widget(
         Paragraph::new(lines).alignment(ratatui::layout::Alignment::Center),
