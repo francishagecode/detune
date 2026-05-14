@@ -10,17 +10,14 @@ A terminal music player written in Rust. Browse a folder, play files, watch the 
 - Theme picker
 - Shuffle and loop playback
 - Reads tags and embedded album art (via Lofty)
-- Single binary, no daemon
 
 ## Screenshots
 
-<!-- Drop screenshots into a `screenshots/` folder and link them here. -->
+<img width="1016" height="389" alt="image" src="https://github.com/user-attachments/assets/9c2f1cef-9f8e-49b4-ba3a-4fe9d41dca0b" />
 
-![Library view](screenshots/library.png)
+<img width="1023" height="384" alt="image" src="https://github.com/user-attachments/assets/5c806af4-a460-4c2c-b76d-f52731b23693" />
 
-![Visualizer](screenshots/visualizer.png)
-
-![Themes](screenshots/themes.png)
+<img width="1021" height="387" alt="image" src="https://github.com/user-attachments/assets/8e4c5451-44b0-41b6-aa8e-a66d0c703db2" />
 
 ## Installation
 
