@@ -1,0 +1,87 @@
+# detune
+
+A terminal music player written in Rust. Browse a folder, play files, watch the visualizer.
+
+## Features
+
+- Plays common audio formats (MP3, FLAC, OGG, WAV, AAC/M4A, and more via Symphonia)
+- Folder-based library browser with keyboard and mouse navigation
+- Real-time audio visualizer with multiple modes
+- Theme picker
+- Shuffle and loop playback
+- Reads tags and embedded album art (via Lofty)
+- Single binary, no daemon
+
+## Screenshots
+
+<!-- Drop screenshots into a `screenshots/` folder and link them here. -->
+
+![Library view](screenshots/library.png)
+
+![Visualizer](screenshots/visualizer.png)
+
+![Themes](screenshots/themes.png)
+
+## Installation
+
+### Requirements
+
+- Rust toolchain (1.85 or newer, for edition 2024) — install via [rustup](https://rustup.rs)
+- A working audio output stack:
+  - Linux: ALSA development headers (`libasound2-dev` on Debian/Ubuntu, `alsa-lib` on Arch, `alsa-lib-devel` on Fedora)
+  - macOS and Windows: no extra packages needed
+
+### Build from source
+
+```sh
+git clone https://github.com/francishagecode/detune.git
+cd detune
+cargo build --release
+```
+
+The compiled binary will be at `target/release/detune`.
+
+### Install to PATH
+
+```sh
+cargo install --path .
+```
+
+This places `detune` in `~/.cargo/bin`, which should already be on your `PATH` if you installed Rust through rustup.
+
+## Usage
+
+Run in the current directory:
+
+```sh
+detune
+```
+
+Or point it at a music folder:
+
+```sh
+detune ~/Music
+```
+
+### Keybindings
+
+| Key            | Action                          |
+| -------------- | ------------------------------- |
+| `Space`        | Play / pause                    |
+| `Enter` / `l`  | Open folder / play track        |
+| `Backspace` / `h` | Go up a folder               |
+| `j` / `k`      | Move selection down / up        |
+| `PgDn` / `PgUp`| Page down / up                  |
+| `Home` / `End` | Jump to first / last            |
+| `a`            | Enqueue selected                |
+| `s`            | Toggle shuffle                  |
+| `r`            | Toggle loop                     |
+| `t`            | Theme picker                    |
+| `v`            | Visualizer picker               |
+| `q` / `Esc`    | Quit                            |
+
+Mouse clicks and scroll are also supported.
+
+## License
+
+MIT
