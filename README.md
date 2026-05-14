@@ -2,14 +2,11 @@
 
 A terminal music player written in Rust. Browse a folder, play files, watch the visualizer.
 
-## Features
-
 - Plays common audio formats (MP3, FLAC, OGG, WAV, AAC/M4A, and more via Symphonia)
 - Folder-based library browser with keyboard and mouse navigation
 - Real-time audio visualizer with multiple modes
 - Theme picker
 - Shuffle and loop playback
-- Reads tags and embedded album art (via Lofty)
 
 ## Screenshots
 
